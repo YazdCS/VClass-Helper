@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "VClass Helper",
+  "version": "1.0.0",
+
+  "description": "Add direct join button to classes at el.yazd.ac.ir/vclass",
+
+  "icons": {
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.el.yazd.ac.ir/vclass*"],
+      "js": ["vclass-helper.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
